@@ -1,51 +1,47 @@
-/**
- * Minha versão de gets() e print() para testes
- */
- function gets(pergunta) {
-    let valor = prompt(pergunta);
-    while (isNaN(valor) || valor < 0) {
-        valor = prompt("Você não digitou um número. Favor digitar um número: ");
+/*
+let objecttD = {
+    novoValor:"sadsdsa",
+    quemSabe: 1,
+    mais:["sdfasd","5"]
+}
+alert(objecttD.mais[1]) */
+
+/*
+//classe
+class spaceship {
+    constructor(nome, quanttt){
+        this.nome = nome
+        this.quanttt = quanttt
+
     }
-    return valor;
-}
 
-function print(variavel) {
-    console.log(variavel)
-}
+} 
 
-//Para poder mostrar o resultado no HTML
-const res = document.querySelector('#resultado');
+let myNave = new spaceship("Carlos",40)
+let myNave2 = new spaceship("weqweqwes",50)
+console.log(myNave.nome)
+console.log(myNave2)
 
-//Desafio
-let totalItems = parseInt(gets("Digite o total de números a serem recebidos"));
-let pares = [];
-let impares = [];
+*/
 
-for (let i = 0; i < totalItems ; i++) {
-    let number = parseInt(gets("Digite o valor:"));
-    if (number%2 === 0){
-        pares.push(number);
+
+
+//class com metodo
+/*
+class NdSpace{
+    constructor(nome, typo, tripulacao){
+        this.nome = nome
+        this.typo = typo
+        this.tripulacao = tripulacao
+        this.velocidade = 0
     }
-    else {
-        impares.push(number);
+    SpaceVelo(velocidades){
+
+     this.velocidade += velocidades
     }
 }
+let novaNave = new NdSpace("Vall", "guerra", 20)
+novaNave.SpaceVelo(50)
 
-
-pares.sort((a, b) =>  a - b);
-
-impares.sort((a, b) =>  b - a);
-
-
-let html = `Foram recebidos ${totalItems} valores: \n\n`;
-
-for(let i = 0; i < pares.length;i++){
-    html += `${pares[i]}\n`;
-    print(pares[i])
-}
-html += "\n";
-for(let i = 0; i < impares.length;i++){
-    html += `${impares[i]}\n`;
-    print(impares[i])
-}
-res.innerHTML = html;
+console.log(novaNave)
+*/
